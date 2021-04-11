@@ -2,7 +2,10 @@ const app = Vue.createApp({
     data() {
         return {
             product: 'Socks',
-            description: 'These are some fluffy socks.'
+            image: './assets/images/socks_green.jpg',
+            description: 'These are some fluffy socks.',
+            url: 'https://lotsofsocks.com'
         }
     }
 })
+
