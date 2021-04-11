@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="app">
+
       <div class="nav-bar"></div>
 
       <div class="cart">Cart({{ cart }})</div>
@@ -27,14 +28,13 @@
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
-
             <div 
               class="color-circle" 
               v-for="(variant, index) in variants"
               :key="variant.id" 
               @mouseover="updateVariant(index)"
               :style="{ backgroundColor: variant.color }"></div>
-            <button class="button" :class="{ disabledButton: !inStock }" :disabled="!inStock" v-on:click="addToCart">Add to Cart</button>
+            <button class="button" :class="{ disabledButton: !inStock }" :disabled="!inStock" @click="addToCart">Add to Cart</button>
           </div>
         </div>
       </div>

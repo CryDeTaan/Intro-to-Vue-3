@@ -12,6 +12,7 @@ const app = Vue.createApp({
             ]
         }
     },
+
     methods: {
         addToCart() {
             this.cart += 1
@@ -36,3 +37,4 @@ const app = Vue.createApp({
         }
     }
 })
+
