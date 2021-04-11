@@ -5,10 +5,10 @@ const app = Vue.createApp({
             premium: true
         }
     },
+
     methods: {
         updateCart(id) {
             this.cart.push(id)
         }
     }
-  })
-  
+})
